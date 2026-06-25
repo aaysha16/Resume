@@ -16,143 +16,195 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 
-%----------FONT OPTIONS----------
+%----------PAGE SETUP----------
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.2in}
 
 \urlstyle{same}
-
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
+%----------SECTION FORMATTING----------
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{2pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{2pt}]
 
-%-------------------------
-% Custom commands
+%----------CUSTOM COMMANDS----------
 \newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{0pt}}
-  }
+  \item\small{#1}
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+      \textbf{#1} & \small #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-4pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
-    \item
+  \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+      \small #1 & \small #2 \\
+    \end{tabular*}\vspace{-4pt}
 }
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeCertItem}[3]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \small #3 \\
+      \textit{\small #2} & \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in, itemsep=2pt, topsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{2pt}}
 
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%===========================================
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%
+%===========================================
 
 \begin{document}
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge \scshape Aaysha Ali} \\ \vspace{1pt}
-    \small +91 8851618910 $|$ \href{mailto:aliaaysha27@gmail.com}{aliaaysha27@gmail.com} $|$
-    \href{https://linkedin.com/in/aayshaali}{linkedin.com/in/aayshaali} $|$
-    \href{https://github.com/aaysha16}{github.com/aaysha16} $|$
-    \href{https://orcid.org/0009-0005-5832-6542}{orcid.org/0009-0005-5832-6542} \\
-    \small Faridabad, Haryana, India
+  {\LARGE \textbf{Aaysha Ali}} \\[4pt]
+  \small
+  Faridabad, Haryana, India \quad $\cdot$ \quad
+  +91 88516 18910 \quad $\cdot$ \quad
+  \href{mailto:aliaaysha27@gmail.com}{aliaaysha27@gmail.com} \\[2pt]
+  \href{https://linkedin.com/in/aayshaali}{linkedin.com/in/aayshaali} \quad $\cdot$ \quad
+  \href{https://github.com/aaysha16}{github.com/aaysha16} \quad $\cdot$ \quad
+  \href{https://orcid.org/0009-0005-5832-6542}{orcid.org/0009-0005-5832-6542}
 \end{center}
 
-%-----------SUMMARY-----------
-\section{Professional Summary}
-\small{Methodical and research-oriented Bachelor of Pharmacy undergraduate with a grounded understanding of core pharmaceutical subjects and scientific communication. Experienced in presenting review-based work at an international conference and collaborating effectively in academic settings. Brings clarity and consistency to tasks that require engagement with technical material. Seeking internship or entry-level training opportunities that offer practical exposure across pharmaceutical, laboratory, or allied professional environments.}
+\vspace{4pt}
+
+%-----------OBJECTIVE-----------
+\section{Objective}
+
+\vspace{4pt}
+\small{
+  Second-year Bachelor of Pharmacy undergraduate at Jamia Hamdard with a background in literature-based research, scientific writing, and pharmaceutical sciences. Presented a review poster at SECON 2025 and published a peer-reviewed article on Zenodo. Completed training in Good Clinical Practice and molecular docking. Applying for a Master of Pharmacy or related postgraduate programme to pursue research at the intersection of drug formulation and computational pharmacology.
+}
+\vspace{4pt}
 
 %-----------EDUCATION-----------
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Jamia Hamdard}{New Delhi, India}
-      {Second-Year Undergraduate in Pharmaceutical Sciences}{2023 -- Present}
-  \resumeSubHeadingListEnd
 
-%-----------RESEARCH & PRESENTATIONS-----------
-\section{Research \& Academic Presentations}
-  \resumeSubHeadingListStart
-    \resumeProjectHeading
-      {\textbf{Conference Poster Presentation} $|$ \emph{SECON 2025 -- Student Conference on Emerging Sciences}}{2025}
-      \resumeItemListStart
-        \resumeItem{Designed and presented a review poster at SECON 2025, hosted by Jamia Hamdard, New Delhi.}
-        \resumeItem{Demonstrated ability to synthesize scientific literature and communicate research findings to an academic audience.}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
+\vspace{2pt}
+\resumeSubHeadingListStart
 
-%-----------PUBLICATIONS-----------
-\section{Publications}
-  \begin{itemize}[leftmargin=0.15in, label={}, itemsep=3pt]
-    \small \item Aaysha, A. \textit{Giloy as a Nutraceutical: A Natural Pathway to Wellness.} Zenodo, 31 Oct. 2025. \href{https://doi.org/10.5281/zenodo.19390923}{https://doi.org/10.5281/zenodo.19390923}
-  \end{itemize}
+  \resumeSubheading
+    {Jamia Hamdard}{New Delhi, India}
+    {Bachelor of Pharmacy (B.Pharm), Year II}{2023 -- Present}
 
-%-----------SCHOLARSHIPS & AWARDS-----------
-\section{Scholarships \& Awards}
-  \begin{itemize}[leftmargin=0.15in, label={$\bullet$}, itemsep=3pt]
-    \small \item Awarded a pharmaceutical company scholarship administered through the Smile Foundation.
-    \small \item Scholarship retention contingent upon achieving distinction in each academic semester, which has been consistently maintained.
-  \end{itemize}
+\resumeSubHeadingListEnd
 
-%-----------CERTIFICATIONS-----------
-\section{Certifications}
-  \begin{itemize}[leftmargin=0.15in, label={}, itemsep=3pt]
-    \small \item \textbf{Good Clinical Practice (GCP)}{: Certified in Good Clinical Practice standards.}
-  \end{itemize}
+%-----------RESEARCH-----------
+\section{Research and Academic Work}
+
+\vspace{2pt}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Conference Poster} $|$ SECON 2025, Jamia Hamdard, New Delhi}{2025}
+    \resumeItemListStart
+      \resumeItem{Designed and delivered a review poster at the Student Conference on Emerging Sciences (SECON 2025).}
+      \resumeItem{Compiled and structured findings from primary literature into a format suitable for academic peer review.}
+      \resumeItem{Responded to audience and faculty questions on the presented material.}
+    \resumeItemListEnd
+
+  \vspace{4pt}
+
+  \resumeProjectHeading
+    {\textbf{Published Article} $|$ Zenodo Repository}{October 2025}
+    \resumeItemListStart
+      \resumeItem{Ali, A. \textit{Giloy as a Nutraceutical: A Natural Pathway to Wellness.} Zenodo, 31 Oct. 2025.}
+      \resumeItem{DOI: \href{https://doi.org/10.5281/zenodo.19390923}{10.5281/zenodo.19390923}}
+      \resumeItem{Conducted a structured literature review on the pharmacological properties and therapeutic applications of \textit{Tinospora cordifolia}.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------TRAINING AND CERTIFICATIONS-----------
+\section{Training and Certifications}
+
+\vspace{2pt}
+\resumeSubHeadingListStart
+
+  \resumeCertItem
+    {Molecular Docking: From Theory to Application}
+    {Discovery Boulevard}
+    {June 2026}
+
+  \vspace{2pt}
+
+  \resumeCertItem
+    {Good Clinical Practice (GCP)}
+    {NIDA Clinical Trials Network}
+    {June 2026}
+
+\resumeSubHeadingListEnd
+
+%-----------SCHOLARSHIPS-----------
+\section{Scholarships and Awards}
+
+\vspace{2pt}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Pharmaceutical Company Scholarship}{India}
+    {Administered through the Smile Foundation}{2023 -- Present}
+    \resumeItemListStart
+      \resumeItem{Awarded on the basis of academic merit.}
+      \resumeItem{Retention requires distinction in every semester; this condition has been met consistently.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
 
 %-----------SKILLS-----------
 \section{Skills}
- \begin{itemize}[leftmargin=0.15in, label={}, itemsep=3pt]
-    \small \item \textbf{Research \& Academic}{: Conference poster presentation, Literature review and synthesis, Academic writing and documentation, Data interpretation, Research ethics}
-    \small \item \textbf{Pharmaceutical}{: Pharmaceutical principles, Drug formulation concepts, Academic team collaboration}
-    \small \item \textbf{Tools \& Software}{: Canva, Microsoft PowerPoint}
-    \small \item \textbf{Professional}{: Time management, Effective collaboration, Scientific communication}
- \end{itemize}
 
-%-----------ADDITIONAL INTERESTS-----------
-\section{Additional Interests}
- \begin{itemize}[leftmargin=0.15in, label={$\bullet$}, itemsep=2pt]
-    \small \item Poetry and reflective writing
-    \small \item Culinary practice
-    \small \item Reading on scientific theory and research concepts
- \end{itemize}
+\vspace{4pt}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=5pt]
 
-%-------------------------------------------
+  \small \item \textbf{Research and Writing:}
+    Literature review, scientific writing, academic documentation, data interpretation, research ethics, poster design
+
+  \small \item \textbf{Pharmaceutical Sciences:}
+    Pharmaceutical principles, drug formulation concepts, basic molecular docking, GCP compliance
+
+  \small \item \textbf{Software and Tools:}
+    Canva, Microsoft PowerPoint, Zenodo
+
+  \small \item \textbf{Languages:}
+    English (proficient), Urdu (native), Hindi (proficient)
+
+\end{itemize}
+
+%-----------INTERESTS-----------
+\section{Interests}
+
+\vspace{4pt}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=3pt]
+  \small \item Reading in pharmacology and plant-based medicine
+  \small \item Reflective and creative writing
+  \small \item Culinary practice
+\end{itemize}
+
 \end{document}
