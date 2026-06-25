@@ -1,0 +1,53 @@
+name: Build Resume PDF
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:  # allows manual trigger from GitHub UI
+
+permissions:
+  contents: write  # needed to create GitHub Releases
+
+jobs:
+  build:
+    name: Compile LaTeX → PDF
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Compile resume.tex using tectonic (fast, self-contained LaTeX engine)
+      - name: Compile LaTeX with Tectonic
+        uses: wtfjoke/setup-tectonic@v3
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build PDF
+        run: tectonic resume.tex
+
+      # 3. Upload compiled PDF as a build artifact (available for 90 days)
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: resume-pdf
+          path: resume.pdf
+          retention-days: 90
+
+      # 4. On pushes to main: create/update a GitHub Release with the PDF
+      - name: Create GitHub Release with PDF
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: "Latest Resume"
+          body: |
+            Auto-generated resume PDF from the latest `main` branch commit.
+            Built from `resume.tex` using the Tectonic LaTeX engine.
+          files: resume.pdf
+          make_latest: true
