@@ -29,14 +29,16 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build PDF
-        run: tectonic resume.tex
+        run: |
+          tectonic resume.tex
+          mv resume.pdf Aaysha_Ali_Resume.pdf
 
       # 3. Upload compiled PDF as a build artifact (available for 90 days)
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
         with:
           name: resume-pdf
-          path: resume.pdf
+          path: Aaysha_Ali_Resume.pdf
           retention-days: 90
 
       # 4. Delete old release and tag to ensure fresh timestamp
@@ -57,6 +59,6 @@ jobs:
           body: |
             Auto-generated resume PDF from the latest `main` branch commit.
             Built from `resume.tex` using the Tectonic LaTeX engine.
-          files: resume.pdf
+          files: Aaysha_Ali_Resume.pdf
           make_latest: true
 

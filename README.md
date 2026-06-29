@@ -8,4 +8,4 @@ This repository contains the professional resume source code for **Aaysha Ali**,
 
 The compiled, ATS-friendly resume PDF is automatically generated on every push to the `main` branch. 
 
-* [**Download Compiled Resume (PDF)**](../../releases/latest/download/resume.pdf)
+* [**Download Compiled Resume (PDF)**](../../releases/latest/download/Aaysha_Ali_Resume.pdf)
