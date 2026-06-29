@@ -39,7 +39,15 @@ jobs:
           path: resume.pdf
           retention-days: 90
 
-      # 4. On pushes to main: create/update a GitHub Release with the PDF
+      # 4. Delete old release and tag to ensure fresh timestamp
+      - name: Delete old release and tag
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        run: gh release delete latest --yes --cleanup-tag
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true
+
+      # 5. On pushes to main: create fresh GitHub Release with the PDF
       - name: Create GitHub Release with PDF
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         uses: softprops/action-gh-release@v2
@@ -51,3 +59,4 @@ jobs:
             Built from `resume.tex` using the Tectonic LaTeX engine.
           files: resume.pdf
           make_latest: true
+
