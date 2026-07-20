@@ -1,23 +1,36 @@
-# Aaysha Ali | Professional Resume
+<img width="100%" alt="Aaysha Ali" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f766e,100:0d9488&height=210&section=header&text=Aaysha%20Ali&fontColor=ffffff&fontSize=54&fontAlignY=40&desc=Bachelor%20of%20Pharmacy%20%20%C2%B7%20%20Jamia%20Hamdard&descSize=18&descAlignY=62" />
 
-Welcome to my resume repository. I am a Bachelor of Pharmacy (B.Pharm) student at Jamia Hamdard, specializing in computational drug discovery (molecular docking), analytical chemistry (HPLC), and clinical research practices (GCP).
+<br>
 
-This repository is maintained as a central hub for my professional resume, which is regularly updated to reflect my latest certifications, research presentations, and academic achievements.
+<h2 align="center">Resume</h2>
 
----
+<h3 align="center">Clinical research, molecular docking, HPLC analysis, and medical writing</h3>
 
-## 📄 Download Latest Resume
+<p align="center">
+  Backed by a pharmaceutical sciences foundation.
+</p>
 
-If you are a recruiter, hiring manager, or potential collaborator, you can view or download my latest professional resume here:
+<br>
 
-* [**Download Resume (PDF)**](../../releases/latest/download/Aaysha_Ali_Resume.pdf)
+<p align="center">
+  <a href="https://github.com/aaysha16/Resume/releases/latest/download/Aaysha_Ali_Resume.pdf"><img alt="Download resume PDF" src="https://img.shields.io/badge/Download%20Resume-0D9488?style=for-the-badge" /></a>
+  &nbsp;&nbsp;
+  <a href="https://aaysha16.github.io"><img alt="Portfolio website" src="https://img.shields.io/badge/Portfolio-0F766E?style=for-the-badge" /></a>
+  &nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/aayshaali/"><img alt="LinkedIn profile" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge" /></a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/aaysha16/Certificates"><img alt="Certificates archive" src="https://img.shields.io/badge/Certificates-1E293B?style=for-the-badge" /></a>
+  &nbsp;&nbsp;
+  <a href="mailto:aliaaysha27@gmail.com"><img alt="Email me" src="https://img.shields.io/badge/Email-334155?style=for-the-badge" /></a>
+</p>
 
----
+<br>
+<br>
 
-## 🔗 Connect With Me
+<p align="center">
+  <img alt="Resume views" src="https://komarev.com/ghpvc/?username=aaysha16&label=Resume%20views&color=0d9488&style=flat-square" />
+</p>
 
-* **Email:** [aliaaysha27@gmail.com](mailto:aliaaysha27@gmail.com)
-* **LinkedIn:** [linkedin.com/in/aayshaali](https://linkedin.com/in/aayshaali)
-* **GitHub:** [github.com/aaysha16](https://github.com/aaysha16)
-* **ORCID:** [orcid.org/0009-0005-5832-6542](https://orcid.org/0009-0005-5832-6542)
-* **Certifications Portfolio:** [github.com/aaysha16/Certificates](https://github.com/aaysha16/Certificates)
+<br>
+
+<img width="100%" alt="" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d9488,100:0f766e&height=120&section=footer" />
